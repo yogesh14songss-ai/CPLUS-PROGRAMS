@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C++ Programming Practice Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>C++ Programming Practice </h1>
+    
+</header>
+
+<section id="topics-view" class="view">
+    <h2>Select a Topic</h2>
+
+    <div class="topic-grid">
+
+        <div class="topic-card" onclick="openTopic('basic')">
+            <h3>Basic Programming Constructs</h3>
+        </div>
+
+        <div class="topic-card" onclick="openTopic('strings')">
+            <h3>Strings</h3>
+        </div>
+
+        <div class="topic-card" onclick="openTopic('arrays')">
+            <h3>Multi-Dimension Arrays</h3>
+        </div>
+
+        <div class="topic-card" onclick="openTopic('functions')">
+            <h3>Functions</h3>
+        </div>
+
+        <div class="topic-card" onclick="openTopic('conversion')">
+            <h3>Data Conversion</h3>
+        </div>
+
+        <div class="topic-card" onclick="openTopic('inheritance')">
+            <h3>Inheritance</h3>
+        </div>
+
+        <div class="topic-card" onclick="openTopic('oop')">
+            <h3>Object Oriented Programming</h3>
+        </div>
+
+        <div class="topic-card" onclick="openTopic('virtual')">
+            <h3>Virtual Functions</h3>
+        </div>
+
+        <div class="topic-card" onclick="openTopic('operator')">
+            <h3>Operator Overloading</h3>
+        </div>
+
+        <div class="topic-card" onclick="openTopic('file')">
+            <h3>File Handling</h3>
+        </div>
+  <div class="topic-card" onclick="openTopic('array')">
+            <h3>Single-Dimension array</h3>
+        </div>
+
+    </div>
+</section>
+
+<section id="questions-view" class="view hidden">
+    <button class="back-btn" onclick="goBack()">← Back</button>
+    <h2 id="topic-title"></h2>
+    <div id="question-list"></div>
+</section>
+
+<section id="answer-view" class="view hidden">
+    <button class="back-btn" onclick="goBackToQuestions()">← Back</button>
+    <h2>Question</h2>
+    <div id="question-text" class="card"></div>
+
+    <h2>Solution (C++)</h2>
+    <pre id="solution-text" class="code-box"></pre>
+
+    <h2>Output</h2>
+    <pre id="output-text" class="output-box"></pre>
+<img id="output-image" class="output-image hidden">
+    
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
